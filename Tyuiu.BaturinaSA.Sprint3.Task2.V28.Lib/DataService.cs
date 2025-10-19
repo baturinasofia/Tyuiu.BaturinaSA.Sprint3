@@ -6,10 +6,10 @@ namespace Tyuiu.BaturinaSA.Sprint3.Task2.V28.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double MultiplySeries = 0;
+            double MultiplySeries = 1;
             do
             {
-                MultiplySeries = MultiplySeries + Math.Pow(2, startValue) / (startValue + 1) * (Math.Cos(1.8));
+                MultiplySeries = MultiplySeries * Math.Pow(2, startValue) / (startValue + 1) * (Math.Cos(1.8));
                 startValue++;
             } while (startValue <= stopValue);
 
